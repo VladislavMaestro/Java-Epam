@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<postcards>
+    <postcard id="1">
+        <theme>LANDSCAPE</theme>
+        <type>GREETING</type>
+        <send>true</send>
+        <country>Russia</country>
+        <year>1885</year>
+        <author>Alexander_Pushkin</author>
+        <valuable>false</valuable>
+    </postcard>
+    <postcard id="2">
+        <theme>NATURE</theme>
+        <type>LEAFLET</type>
+        <send>false</send>
+        <country>Germany</country>
+        <year>1839</year>
+        <author>Carl_Gauss</author>
+        <valuable>true</valuable>
+    </postcard>
+    <postcard id="3">
+        <theme>ARCHITECTURE</theme>
+        <type>ADVERTISING</type>
+        <send>true</send>
+        <country>USA</country>
+        <year>2000</year>
+        <author>Mark_Gromov</author>
+        <valuable>true</valuable>
+    </postcard>
+</postcards>

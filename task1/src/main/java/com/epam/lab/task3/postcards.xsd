@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/postcards"
+        xmlns:tns="http://www.example.org/postcards" elementFormDefault="qualified">
+    <element name="postcards">
+        <complexType>
+            <sequence>
+                <element name="postcard" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="theme">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <enumeration value="LANDSCAPE" />
+                                        <enumeration value="NATURE" />
+                                        <enumeration value="PEOPLE" />
+                                        <enumeration value="RELIGION" />
+                                        <enumeration value="SPORT" />
+                                        <enumeration value="ARCHITECTURE" />
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="type">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <enumeration value="GREETING" />
+                                        <enumeration value="ADVERTISING" />
+                                        <enumeration value="LEAFLET" />
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="send" type="boolean" />
+                            <element name="country" type="string" />
+                            <element name="year" type="string"/>
+                            <element name="author" type="string"/>
+                            <element name="valuable" type="boolean"/>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
